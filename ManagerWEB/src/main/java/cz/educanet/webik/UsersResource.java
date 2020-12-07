@@ -54,12 +54,12 @@ public class UsersResource {
     }
 
     @DELETE
-    public Response removeUser(User user) {
-        if(userCheck(user)) {
-            names.remove(user);
-            return Response.ok().build();
+    public Response removeUser(@QueryParam("username") String username) {
+        if(username != null) {
+            names.clear();
+            return Response.ok("Done").build();
         } else {
-            return Response.serverError().build();
+            return Response.status(Response.Status.valueOf("User doesnt exist!")).build();
         }
     }
 
