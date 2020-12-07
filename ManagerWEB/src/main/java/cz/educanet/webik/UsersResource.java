@@ -1,5 +1,7 @@
 package cz.educanet.webik;
 
+import sun.rmi.server.UnicastServerRef;
+
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
@@ -32,9 +34,13 @@ public class UsersResource {
     }
 
     @POST
-    public Response loginUser(){
+    public Response loginUser(User user){
+        if(userCheck(user)) {
 
+        }
+        return Response.ok().build();
     }
+
 
     public Boolean userCheck(User user) {
         for (int i = 0; i < names.size(); i++) {
