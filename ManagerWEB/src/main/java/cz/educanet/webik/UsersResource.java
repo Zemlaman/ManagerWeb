@@ -1,7 +1,5 @@
 package cz.educanet.webik;
 
-import sun.rmi.server.UnicastServerRef;
-
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
