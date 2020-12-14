@@ -1,2 +1,5 @@
 cz/educanet/webik/UsersResource.class
 cz/educanet/webik/User.class
+cz/educanet/webik/CountingResource.class
+cz/educanet/webik/CounterManager.class
+cz/educanet/webik/UsersManager.class

@@ -1,11 +1,16 @@
 package cz.educanet.webik;
 
+import javax.enterprise.context.SessionScoped;
+
+@SessionScoped
 public class User {
-    private String FirstName;
-    private String LastName;
-    private String username;
-    private String email;
-    private String password;
+
+    public String FirstName;
+    public String LastName;
+    public String username;
+    public String email;
+    public String password;
+
     public User(String FirstName, String LastName, String username, String email, String password) {
         this.FirstName = FirstName;
         this.LastName = LastName;
